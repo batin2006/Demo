@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio of a Software Engineering student.">
-    <title>My Personal Portfolio</title>
+    <meta name="description" content="Bá Tín's personal portfolio and Software Engineering journey.">
+    <title>Bá Tín | Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <h2>TIN'S PORTFOLIO</h2>
-        <ul>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="header">
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="#home" class="logo">TIN'S PORTFOLIO</a>
+
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -24,151 +28,244 @@
     </nav>
 </header>
 
-<main>
+<main id="main">
 
+    <!-- HOME -->
     <section id="home" class="hero">
         <div class="hero-content">
+            <p class="welcome" id="greeting">Welcome to my portfolio!</p>
             <h1>Hello, I'm Bá Tín</h1>
             <h2>Future Software Engineer</h2>
+
             <p>
-                Welcome to my personal website.
-                I love technology, programming and learning new things.
+                I am passionate about technology, programming
+                and creating useful digital solutions.
             </p>
-            <a href="#about" class="btn">Explore More</a>
+
+            <p id="current-date" class="date"></p>
+
+            <a href="#about" class="btn">Discover More</a>
         </div>
 
-        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600"
-             alt="Portrait representing a young student">
+        <img
+            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=700"
+            alt="Portrait representing a young student"
+            class="hero-img">
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="section">
         <h2>About Me</h2>
+
         <div class="about-content">
-            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700"
-                 alt="Students working together">
-            <p>
-                My name is Nguyễn Bá Tín. I am an Information Technology
-                student majoring in Software Engineering.
-                I enjoy learning programming, solving problems
-                and exploring new technologies.
-            </p>
-        </div>
-    </section>
+            <img
+                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700"
+                alt="Students collaborating on a project">
 
-    <section id="major" class="section">
-        <h2>My Major</h2>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=700"
-                 alt="Computer hardware and technology">
-            <h3>Software Engineering</h3>
-            <p>
-                I study software development, programming languages,
-                databases and computer systems.
-            </p>
-        </div>
-    </section>
-
-    <section id="goals" class="section">
-        <h2>My Goals</h2>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700"
-                 alt="Laptop displaying programming code">
-            <p>
-                My goal is to become a professional software engineer,
-                improve my coding skills and develop useful applications.
-            </p>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <h2>My Skills</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600"
-                     alt="Programming code on a computer screen">
-                <h3>Programming</h3>
-                <p>Learning C, HTML, CSS and JavaScript.</p>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600"
-                     alt="Person planning and organizing work">
-                <h3>Problem Solving</h3>
-                <p>Developing logical thinking and problem-solving skills.</p>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600"
-                     alt="Team members collaborating">
-                <h3>Teamwork</h3>
-                <p>Working and communicating effectively with others.</p>
+            <div>
+                <h3>Who Am I?</h3>
+                <p>
+                    My name is Nguyễn Bá Tín. I am an Information
+                    Technology student majoring in Software Engineering.
+                    I enjoy learning programming, solving problems
+                    and discovering new technologies.
+                </p>
             </div>
         </div>
     </section>
 
-    <section id="hobbies" class="section">
-        <h2>My Hobbies</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=600"
-                     alt="Books on a table">
-                <h3>Reading</h3>
-                <p>I enjoy reading books and discovering new knowledge.</p>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600"
-                     alt="Green forest and nature">
-                <h3>Nature</h3>
-                <p>I love green spaces and peaceful environments.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="education" class="section">
+    <!-- EDUCATION -->
+    <section id="education" class="section light">
         <h2>Education</h2>
+
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=700"
-                 alt="University campus building">
+            <img
+                src="https://images.unsplash.com/photo-1562774053-701939374585?w=700"
+                alt="University campus">
+
             <h3>FPT University</h3>
             <p>Major: Software Engineering</p>
+            <p>Field: Information Technology</p>
         </div>
     </section>
 
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+
+        <div class="grid">
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600"
+                    alt="Programming code on a computer">
+
+                <h3>Programming</h3>
+                <p>Learning C, HTML, CSS and JavaScript.</p>
+            </article>
+
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600"
+                    alt="Planning and organizing work">
+
+                <h3>Problem Solving</h3>
+                <p>Improving logical thinking and technical skills.</p>
+            </article>
+
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600"
+                    alt="People working together as a team">
+
+                <h3>Teamwork</h3>
+                <p>Communicating and collaborating with others.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- GOALS -->
+    <section id="goals" class="section light">
+        <h2>My Goals</h2>
+
+        <div class="about-content">
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700"
+                alt="Laptop displaying a programming workspace">
+
+            <div>
+                <h3>My Future Vision</h3>
+                <p>
+                    I want to become a professional software engineer,
+                    develop useful applications and continuously
+                    improve my knowledge of technology.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies" class="section">
+        <h2>My Hobbies</h2>
+
+        <div class="grid">
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=600"
+                    alt="Books arranged on a table">
+
+                <h3>Reading</h3>
+                <p>I enjoy reading books and discovering knowledge.</p>
+            </article>
+
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600"
+                    alt="Beautiful green forest">
+
+                <h3>Nature</h3>
+                <p>I love green spaces and peaceful environments.</p>
+            </article>
+
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1493612276216-ee3925520721?w=600"
+                    alt="Creative workspace and personal interests">
+
+                <h3>Creativity</h3>
+                <p>I enjoy exploring new ideas and learning new things.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- IMAGE CAROUSEL -->
+    <section id="gallery" class="section light">
+        <h2>My Image Gallery</h2>
+
+        <div class="carousel">
+            <button id="prevBtn" class="carousel-btn"
+                    aria-label="Previous image">&#10094;</button>
+
+            <figure>
+                <img
+                    id="galleryImage"
+                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900"
+                    alt="Technology and computer hardware">
+
+                <figcaption id="galleryCaption">
+                    Technology and Innovation
+                </figcaption>
+            </figure>
+
+            <button id="nextBtn" class="carousel-btn"
+                    aria-label="Next image">&#10095;</button>
+        </div>
+
+        <p id="imageCounter" aria-live="polite">Image 1 of 3</p>
+    </section>
+
+    <!-- PROJECTS -->
     <section id="projects" class="section">
         <h2>My Projects</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600"
-                     alt="Web development programming project">
-                <h3>Personal Website</h3>
-                <p>A responsive website introducing myself and my interests.</p>
-            </div>
 
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"
-                     alt="Computer screen showing a digital project">
+        <div class="grid">
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600"
+                    alt="Web development project">
+
+                <h3>Personal Website</h3>
+                <p>A responsive website introducing myself.</p>
+            </article>
+
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"
+                    alt="Computer and digital technology">
+
                 <h3>Programming Practice</h3>
-                <p>Small coding exercises to improve my programming skills.</p>
-            </div>
+                <p>Small coding projects to improve my skills.</p>
+            </article>
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <!-- CONTACT -->
+    <section id="contact" class="section light">
         <h2>Contact Me</h2>
-        <p>Thank you for visiting my website!</p>
-        <p>Email: your-email@example.com</p>
+
+        <p>Have a question? Feel free to send me a message.</p>
+
+        <form id="contactForm" class="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message"
+                      rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+
+            <p id="formStatus" role="status" aria-live="polite"></p>
+        </form>
     </section>
 
 </main>
 
-<footer>
+<footer class="footer">
     <p>&copy; 2026 Bá Tín | Personal Portfolio</p>
+    <p>Designed and developed by Bá Tín.</p>
 </footer>
+
+<!-- ACCESSIBILITY CONTROLS -->
+<div class="accessibility">
+    <button id="increaseText" aria-label="Increase text size">A+</button>
+    <button id="resetText" aria-label="Reset text size">A</button>
+</div>
 
 <button id="topBtn" aria-label="Back to top">↑</button>
 
-<script src="script.js"></script>
-
 </body>
 </html>
+
